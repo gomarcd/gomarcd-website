@@ -1,0 +1,15 @@
+pipeline:
+  git-pull:
+    image: alpine/git
+    commands:
+      - cd /home/codeberg/hugo/gomarcd.dev
+      - git pull
+    when:
+      event: push
+  build-hugo:
+    image: klakegg/hugo:latest
+    commands:
+      - cd /home/codeberg/hugo/gomarcd.dev
+      - hugo
+    when:
+      event: push
