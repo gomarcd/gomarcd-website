@@ -1,9 +1,10 @@
 pipeline:
   deploy:
     image: appleboy/drone-ssh:linux-amd64
+    host: ssh_host
     secrets:
       - ssh_host
       - ssh_username
       - ssh_key
     commands:
-        - pwd
+        - cd /home/codeberg/
