@@ -1,12 +1,9 @@
 pipeline:
   deploy:
     image: appleboy/drone-ssh:linux-amd64
-    settings:
-      host:
-        from_secret: ssh_host
-      username:
-        from_secret: ssh_username
-      key:
-        from_secret: ssh_key
+    secrets:
+      - ssh_host
+      - ssh_username
+      - ssh_key
     commands:
         - pwd
