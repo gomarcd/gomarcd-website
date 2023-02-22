@@ -1,4 +1,9 @@
 pipeline:
+- name: build
+  image: plugins/hugo
+  settings:
+    hugo_version: 0.110.0
+
 - name: deploy
   image: appleboy/drone-ssh:linux-amd64
   settings:
