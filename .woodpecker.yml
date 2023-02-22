@@ -15,5 +15,5 @@ pipeline:
       from_secret: ssh_key
     command_timeout: 2m
     script:
-      - source: "public/"
-      - target: "/home/codeberg/hugo/gomarcd.dev"
+      - source: ./public/*
+      - target: /home/codeberg/hugo/gomarcd.dev/
