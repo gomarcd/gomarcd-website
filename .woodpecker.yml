@@ -3,8 +3,6 @@ pipeline:
   image: plugins/hugo
   settings:
     hugo_version: 0.110.0
-  commands:
-    - hugo --minify
 
 - name: deploy
   image: appleboy/drone-scp:linux-amd64
