@@ -14,7 +14,7 @@ With [SSH](https://www.oreilly.com/library/view/ssh-the-secure/0596008953/ch01s0
 
 To use unique keys for different repos calls for a few extra steps.
 
-Let's one for Github:
+Create one for Github:
 
 `ssh-keygen -t ed25519 -f ~/.ssh/gomarcd-github`
 
