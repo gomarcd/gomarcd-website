@@ -88,6 +88,8 @@ $ nano .git/config
         email = git@gomarcd.dev
 ```
 
-Also note the domain `gomarcd.github.com` referenced there must match what you put as `Host` from `~/.ssh/config`.
+Also note the `gomarcd.github.com` is only a reference to the SSH identity and must match what you put as `Host` from `~/.ssh/config`.
 
-All that's left is to create a repo with the same name in Github & Codeberg. From now `git push` will automatically push to both repositories using their respective SSH keys. 
+All that's left now is to create a repo with the same name in Github & Codeberg!
+
+From now on, `git push` will automatically push to both repositories using their respective SSH keys.
