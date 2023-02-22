@@ -77,7 +77,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "gomarcd.dev"
-    Content: A space for @gomarcd to post about dev & tech.
+    Content: Musings on tech things by [@gomarcd](/about)
 
   # socialIcons:
   #   - name: twitter
