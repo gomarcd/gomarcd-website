@@ -57,6 +57,8 @@ It's a good idea to back these up in a safe place.
 
 Next, upload each respective **public key** (file ending in **.pub**) to Github & Codeberg.
 
+## Git configuration
+
 Initialize your Git repo and switch to `main` branch:
 
 ```
