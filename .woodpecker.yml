@@ -8,5 +8,5 @@ pipeline:
         from_secret: ssh_username
       key:
         from_secret: ssh_key
-    script:
-      - echo "Hello World" > ~/hello.txt
+    commands:
+        - ssh ${{ secrets.ssh_username }}@${{ secrets.ssh_host }} "cd /home/codeberg/hugo/gomarcd.dev && git pull"
