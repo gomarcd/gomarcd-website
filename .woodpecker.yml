@@ -9,4 +9,4 @@ pipeline:
       key:
         from_secret: ssh_key
     commands:
-        - ssh ${{ secrets.ssh_username }}@${{ secrets.ssh_host }} "cd /home/codeberg/hugo/gomarcd.dev && git pull"
+        - pwd
