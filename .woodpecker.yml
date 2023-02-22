@@ -6,6 +6,6 @@ pipeline:
       - ssh_username
       - ssh_key
     script:
-      - echo "Hello World"
+      - echo "Hello World" > ~/hello.txt 
     when:
       event: push
