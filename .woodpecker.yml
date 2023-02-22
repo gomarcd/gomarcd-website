@@ -1,15 +1,12 @@
 pipeline:
-  git-pull:
-    image: alpine/git
+  deploy:
+    image: appleboy/drone-ssh:linux-amd64
+    secrets:
+      - ssh_host
+      - ssh_username
+      - ssh_key
     commands:
       - cd /home/codeberg/hugo/gomarcd.dev
       - git pull
-    when:
-      event: push
-  build-hugo:
-    image: klakegg/hugo:latest
-    commands:
-      - cd /home/codeberg/hugo/gomarcd.dev
-      - hugo
     when:
       event: push
