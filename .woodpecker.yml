@@ -10,4 +10,4 @@ pipeline:
       from_secret: ssh_key
     command_timeout: 2m
     script:
-      - cd /home/codeberg/hugo/gomarcd.dev
+      - cd /home/codeberg/hugo/gomarcd.dev && touch hello.txt
