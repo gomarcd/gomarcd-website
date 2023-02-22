@@ -7,7 +7,7 @@ pipeline:
     username:
       from_secret: ssh_username
     key:
-      from_secret: ssh-key
+      from_secret: ssh_key
     command_timeout: 2m
     script:
       - cd /home/codeberg/hugo/gomarcd.dev
