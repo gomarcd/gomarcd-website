@@ -1,4 +1,4 @@
-steps:
+pipeline:
 - name: deploy
   image: appleboy/drone-ssh:linux-amd64
   settings:
