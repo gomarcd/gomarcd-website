@@ -5,7 +5,7 @@ pipeline:
     hugo_version: 0.110.0
 
 - name: deploy
-  image: appleboy/drone-scp:linux-amd64
+  image: appleboy/drone-scp:latest
   settings:
     host:
       from_secret: ssh_host
