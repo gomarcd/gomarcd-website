@@ -13,5 +13,5 @@ pipeline:
       from_secret: ssh_username
     key:
       from_secret: ssh_key
-    source: "./public/*"
-    target: "/home/codeberg/hugo/gomarcd.dev"
+    source: "./public"
+    target: "/home/codeberg/hugo/gomarcd.dev/"
