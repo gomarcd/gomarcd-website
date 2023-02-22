@@ -5,8 +5,7 @@ pipeline:
       - ssh_host
       - ssh_username
       - ssh_key
-    commands:
-      - cd /home/codeberg/hugo/gomarcd.dev
-      - git pull
+    script:
+      - echo "Hello World"
     when:
       event: push
