@@ -11,3 +11,5 @@ hidemeta: true
 [Codeberg](https://codeberg.org/gomarcd)
 
 [GPG](/web@gomarcd.dev-public.asc)
+
+yes

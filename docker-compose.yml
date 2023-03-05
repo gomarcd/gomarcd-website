@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  hugo-papermod:
+    image: klakegg/hugo:0.107.0
+    container_name: hugo-papermod
+    command: server
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
