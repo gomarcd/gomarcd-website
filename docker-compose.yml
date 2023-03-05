@@ -2,10 +2,19 @@ version: "3"
 
 services:
   hugo-papermod:
-    image: klakegg/hugo:0.107.0
-    container_name: hugo-papermod
+    image: klakegg/hugo:latest
+    container_name: hugo-build
     command: server
     volumes:
       - ".:/src"
+
+  nginx:
+    image: nginx:alpine
+    container_name: hugo-nginx
+    restart: always
+    depends_on:
+      - hugo-papermod
+    volumes:
+      - ./public:/usr/share/nginx/html
     ports:
-      - "1313:1313"
+      - "1313:80"

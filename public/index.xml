@@ -4,31 +4,84 @@
     <title>@gomarcd</title>
     <link>https://gomarcd.dev/</link>
     <description>Recent content on @gomarcd</description>
-    <image>
-      <title>@gomarcd</title>
-      <url>https://gomarcd.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://gomarcd.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 20 Feb 2023 20:23:57 -0700</lastBuildDate><atom:link href="https://gomarcd.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gomarcd.dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello</title>
-      <link>https://gomarcd.dev/posts/hello/</link>
-      <pubDate>Mon, 20 Feb 2023 20:23:57 -0700</pubDate>
+      <title>@gomarcd</title>
+      <link>https://gomarcd.dev/about/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://gomarcd.dev/posts/hello/</guid>
-      <description>yes</description>
+      <guid>https://gomarcd.dev/about/</guid>
+      <description>Twitter
+Forgejo | Codeberg | Sourcehut | Github
+GPG | Keyoxide</description>
     </item>
     
+    <item>
+      <title>Push a Git repo to multiple remotes with unique SSH keys</title>
+      <link>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</guid>
+      <description>For one reason or another, you might like to push a Git repo to more than one remote. This website automatically gets pushed to both Codeberg and Github, for example.
+Here, I will discuss how I&amp;rsquo;ve set things up.
+Managing multiple SSH keys With SSH, you can securely push changes to your Git remotes without needing to enter login credentials every time. For a single repository, there is minimal setup: just upload your public key.</description>
+    </item>
     
     <item>
-      <title>Home</title>
-      <link>https://gomarcd.dev/home/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>3 ways to save time in your dev workflow</title>
+      <link>https://gomarcd.dev/posts/3-ways-dev-workflow/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://gomarcd.dev/home/</guid>
-      <description>Hello. Welcome to the site.</description>
+      <guid>https://gomarcd.dev/posts/3-ways-dev-workflow/</guid>
+      <description>You got clickbaited again.</description>
     </item>
+    
+    <item>
+      <title>An isolated &amp; reproducible Laravel environment</title>
+      <link>https://gomarcd.dev/posts/isolated-reproducible-laravel/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/isolated-reproducible-laravel/</guid>
+      <description>The most amazing post you&amp;rsquo;ve never seen.</description>
+    </item>
+    
+    <item>
+      <title>Github Co-Pilot vs ChatGPT</title>
+      <link>https://gomarcd.dev/posts/github-chatgpt/</link>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/github-chatgpt/</guid>
+      <description>You got clickbaited again.</description>
+    </item>
+    
+    <item>
+      <title>Deploy a static website with Hugo &amp; Codeberg</title>
+      <link>https://gomarcd.dev/posts/deploy-static-hugo-codeberg/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/deploy-static-hugo-codeberg/</guid>
+      <description>You got clickbaited again.</description>
+    </item>
+    
+    <item>
+      <title>Self-hosted DevOps with Gitea &amp; WoodpeckerCI</title>
+      <link>https://gomarcd.dev/posts/self-hosted-gitea-woodpecker/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/self-hosted-gitea-woodpecker/</guid>
+      <description>You got clickbaited again.</description>
+    </item>
+    
+    <item>
+      <title>Sign your Git commits automatically with GPG</title>
+      <link>https://gomarcd.dev/posts/sign-commit-automatically-gpg/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/sign-commit-automatically-gpg/</guid>
+      <description>You got clickbaited again.</description>
+    </item>
+    
     
     
   </channel>

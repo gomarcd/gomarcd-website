@@ -121,7 +121,7 @@ menu:
       weight: 10
     - identifier: git
       name: git
-      url: https://codeberg.org/gomarcd
+      url: https://git.gomarcd.dev/gomarcd
       weight: 20 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
