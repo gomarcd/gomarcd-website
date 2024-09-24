@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on gomarcd.dev</title>
+    <link>https://gomarcd.dev/posts/</link>
+    <description>Recent content in Posts on gomarcd.dev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://gomarcd.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Push a Git repo to multiple remotes with unique SSH keys</title>
+      <link>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</link>
+      <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</guid>
+      <description>For one reason or another, you might like to push a Git repo to more than one remote. This website automatically gets pushed to both Codeberg and Github, for example.
+Here, I will discuss how I&amp;rsquo;ve set things up.
+Managing multiple SSH keys With SSH, you can securely push changes to your Git remotes without needing to enter login credentials every time. For a single repository, there is minimal setup: just upload your public key.</description>
+      <content:encoded><![CDATA[<p>For one reason or another, you might like to push a Git repo to more than one remote. This website automatically gets pushed to both <a href="https://codeberg.org/gomarcd/gomarcd-website">Codeberg</a> and <a href="https://github.com/gomarcd/gomarcd-website">Github</a>, for example.</p>
+<p>Here, I will discuss how I&rsquo;ve set things up.</p>
+<h2 id="managing-multiple-ssh-keys">Managing multiple SSH keys</h2>
+<p>With <a href="https://www.oreilly.com/library/view/ssh-the-secure/0596008953/ch01s01.html">SSH</a>, you can securely push changes to your Git remotes without needing to enter login credentials every time. For a single repository, there is minimal setup: just upload your public key.</p>
+<p>To use unique keys for different repos calls for a few extra steps.</p>
+<p>Create one for Github:</p>
+<p><code>ssh-keygen -t ed25519 -f ~/.ssh/gomarcd-github</code></p>
+<p>And another for Codeberg:</p>
+<p><code>ssh-keygen -t ed25519 -f ~/.ssh/gomarcd-codeberg</code></p>
+<p>Now let&rsquo;s add an SSH configuration for each one:</p>
+<pre tabindex="0"><code>$ sudo nano ~/.ssh/config
+
+Host gomarcd.github.com
+    Hostname github.com
+    User gomarcd
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/gomarcd-github
+    IdentitiesOnly yes
+
+Host gomarcd.codeberg.org
+    Hostname codeberg.org
+    User gomarcd
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/gomarcd-codeberg
+    IdentitiesOnly yes
+</code></pre><p>See the new keypairs with:</p>
+<pre tabindex="0"><code>$ ls ~/.ssh | grep gomarcd
+
+gomarcd-codeberg
+gomarcd-codeberg.pub
+gomarcd-github
+gomarcd-github.pub
+</code></pre><p>It&rsquo;s a good idea to back these up in a safe place.</p>
+<p>Next, upload each respective <strong>public key</strong> (file ending in <strong>.pub</strong>) to Github &amp; Codeberg.</p>
+<h2 id="git-configuration">Git configuration</h2>
+<p>Initialize your Git repo and switch to <code>main</code> branch:</p>
+<pre tabindex="0"><code>$ cd /home/gomarcd/dev/newProject
+$ git init &amp;&amp; git branch -m main
+</code></pre><p>We switch to <code>main</code> because it&rsquo;s often default now, but you should use whatever branch your remote will be expecting.</p>
+<p>Make sure Git remote config includes the SSH host:</p>
+<pre tabindex="0"><code>$ nano .git/config
+
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote &quot;origin&quot;]
+        url = git@gomarcd.codeberg.org:gomarcd/newproject.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+        url = git@gomarcd.github.com:gomarcd/newproject.git
+[branch &quot;main&quot;]
+        remote = origin
+        merge = refs/heads/main
+[user]
+        name = gomarcd
+        email = git@gomarcd.dev
+</code></pre><p>Also note the <code>gomarcd.github.com</code> is only a reference to the SSH identity and must match what you put as <code>Host</code> from <code>~/.ssh/config</code>.</p>
+<p>All that&rsquo;s left now is to create a repo with the same name in Github &amp; Codeberg!</p>
+<p>From now on, <code>git push</code> will automatically push to both repositories using their respective SSH keys.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>3 ways to save time in your dev workflow</title>
+      <link>https://gomarcd.dev/posts/3-ways-dev-workflow/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/3-ways-dev-workflow/</guid>
+      <description>You got clickbaited again.</description>
+      <content:encoded><![CDATA[<p>You got clickbaited again.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>An isolated &amp; reproducible Laravel environment</title>
+      <link>https://gomarcd.dev/posts/isolated-reproducible-laravel/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/isolated-reproducible-laravel/</guid>
+      <description>The most amazing post you&amp;rsquo;ve never seen.</description>
+      <content:encoded><![CDATA[<p>The most amazing post you&rsquo;ve never seen.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Github Co-Pilot vs ChatGPT</title>
+      <link>https://gomarcd.dev/posts/github-chatgpt/</link>
+      <pubDate>Sun, 19 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/github-chatgpt/</guid>
+      <description>You got clickbaited again.</description>
+      <content:encoded><![CDATA[<p>You got clickbaited again.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Deploy a static website with Hugo &amp; Codeberg</title>
+      <link>https://gomarcd.dev/posts/deploy-static-hugo-codeberg/</link>
+      <pubDate>Sat, 18 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/deploy-static-hugo-codeberg/</guid>
+      <description>You got clickbaited again.</description>
+      <content:encoded><![CDATA[<p>You got clickbaited again.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Self-hosted DevOps with Gitea &amp; WoodpeckerCI</title>
+      <link>https://gomarcd.dev/posts/self-hosted-gitea-woodpecker/</link>
+      <pubDate>Thu, 16 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/self-hosted-gitea-woodpecker/</guid>
+      <description>You got clickbaited again.</description>
+      <content:encoded><![CDATA[<p>You got clickbaited again.</p>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>Sign your Git commits automatically with GPG</title>
+      <link>https://gomarcd.dev/posts/sign-commit-automatically-gpg/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomarcd.dev/posts/sign-commit-automatically-gpg/</guid>
+      <description>You got clickbaited again.</description>
+      <content:encoded><![CDATA[<p>You got clickbaited again.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

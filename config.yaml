@@ -1,0 +1,95 @@
+baseURL: https://gomarcd.dev/
+title: gomarcd.dev
+paginate: 5
+theme: "PaperModX"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+  # To create webpages. 
+    - HTML
+  # To create RSS Feed
+    - RSS
+  # To create an index.json so search works on the site
+    - JSON
+
+params:
+  env: production
+  title: "@gomarcd"
+  description: "Musing on tech things by @gomarcd"
+  DateFormat: "2006-01-02"
+  defaultTheme: auto
+  disableThemeToggle: false
+  EnableInstantClick: true
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    disableFingerprinting: true
+
+  profileMode:
+    enabled: false
+
+  homeInfoParams:
+    Title: "gomarcd.dev"
+    Content: | 
+      Musings on tech things by [@gomarcd](/about) loosely around:
+      - DevOps & system administration
+      - Web & software development
+      - Support & client experience
+      - User experience
+  socialIcons:
+    - name: Twitter
+      url: "https://twitter.com/gomarcd"
+    - name: Github
+      url: "https://github.com/gomarcd"
+
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: search
+      name: search
+      url: /search/
+      weight: 10
+    - identifier: tags
+      name: tags
+      url: /tags/
+      weight: 20
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 30
