@@ -1,7 +1,7 @@
 ---
 title: "VIDEO: Docker for Dev"
 date: 2024-09-24
-tags: ["docker"]
+tags: ["docker", "video"]
 draft: false
 ---
 
