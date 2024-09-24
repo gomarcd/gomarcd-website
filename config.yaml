@@ -31,6 +31,7 @@ params:
   disableThemeToggle: false
   EnableInstantClick: true
 
+  ShowFullTextinRSS: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
@@ -63,6 +64,8 @@ params:
       url: "https://twitter.com/gomarcd"
     - name: Github
       url: "https://git.gomarcd.dev/gomarcd"
+    - name: RSS
+      url: "https://gomarcd.dev/index.xml"
 
   cover:
     hidden: true
