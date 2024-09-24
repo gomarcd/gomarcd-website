@@ -62,7 +62,7 @@ params:
     - name: Twitter
       url: "https://twitter.com/gomarcd"
     - name: Github
-      url: "https://github.com/gomarcd"
+      url: "https://git.gomarcd.dev/gomarcd"
 
   cover:
     hidden: true
