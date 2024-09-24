@@ -1,6 +1,7 @@
 ---
 title: "Push a Git repo to multiple remotes with unique SSH keys"
 date: 2023-02-22
+tags: ["ssh"]
 draft: false
 ---
 
