@@ -2,7 +2,7 @@ baseURL: https://gomarcd.dev/
 title: gomarcd.dev
 paginate: 5
 theme: "PaperModX"
-
+GoogleAnalytics: "G-WKFSZRBETC"
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
