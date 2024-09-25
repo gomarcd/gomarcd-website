@@ -63,7 +63,7 @@ params:
     - name: Twitter
       url: "https://twitter.com/gomarcd"
     - name: Github
-      url: "https://git.gomarcd.dev/gomarcd"
+      url: "https://github.com/gomarcd"
     - name: RSS
       url: "https://gomarcd.dev/index.xml"
 

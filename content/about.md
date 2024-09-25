@@ -6,6 +6,14 @@ ShowBreadCrumbs: false
 hidemeta: true
 ---
 
-Follow me on [Twitter](https://twitter.com/gomarcd) or check out my [Git](https://git.gomarcd.dev/gomarcd) repo.
+In an endless cycle of learning -> creating -> failing.
 
-[GPG pubkey](/web@gomarcd.dev-public.asc)
+I support things. I build things, and I break things. Occasionally, I even talk about it!
+
+Follow me on [Twitter](https://twitter.com/gomarcd) or check out my [Github](https://github.com/gomarcd).
+
+If contacting me, [GPG](/web@gomarcd.dev-public.asc) never hurts.
+
+To support my work:
+
+{{< bmc-button slug="gomarcd" >}}
