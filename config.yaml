@@ -66,6 +66,8 @@ params:
       url: "https://github.com/gomarcd"
     - name: RSS
       url: "https://gomarcd.dev/index.xml"
+    - name: "buymeacoffee"
+      url: "https://buymeacoffee.com/gomarcd"
 
   cover:
     hidden: true

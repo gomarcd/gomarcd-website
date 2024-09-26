@@ -6,7 +6,7 @@ ShowBreadCrumbs: false
 hidemeta: true
 ---
 
-In an endless cycle of learning -> creating -> failing.
+In an endless cycle of learning > creating > failing.
 
 I support things. I build things, and I break things. Occasionally, I even talk about it!
 
