@@ -49,10 +49,7 @@ params:
 
   module:
     imports:
-    - path: github.com/divinerites/plausible-hugo
-
-  profileMode:
-    enabled: false
+      - path: github.com/divinerites/plausible-hugo
 
   homeInfoParams:
     Title: "gomarcd.dev"
