@@ -47,17 +47,6 @@ params:
   assets:
     disableFingerprinting: true
 
-  module:
-    imports:
-      - path: github.com/divinerites/plausible-hugo
-  plausible:
-    enable: true
-    domain: "gomarcd.dev"
-    outbound_link: true
-    file_downloads: true
-    debug: false
-    gitstar: false
-
   homeInfoParams:
     Title: "gomarcd.dev"
     Content: | 
