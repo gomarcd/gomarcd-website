@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ssh on gomarcd.dev</title>
-    <link>http://localhost:1313/tags/ssh/</link>
+    <link>https://gomarcd.dev/tags/ssh/</link>
     <description>Recent content in Ssh on gomarcd.dev</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 22 Feb 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gomarcd.dev/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Push a Git repo to multiple remotes with unique SSH keys</title>
-      <link>http://localhost:1313/posts/git-repo-multiple-remotes-ssh/</link>
+      <link>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</link>
       <pubDate>Wed, 22 Feb 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/git-repo-multiple-remotes-ssh/</guid>
+      <guid>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</guid>
       <description>&lt;p&gt;For one reason or another, you might like to push a Git repo to more than one remote. This website automatically gets pushed to both &lt;a href=&#34;https://codeberg.org/gomarcd/gomarcd-website&#34;&gt;Codeberg&lt;/a&gt; and &lt;a href=&#34;https://github.com/gomarcd/gomarcd-website&#34;&gt;Github&lt;/a&gt;, for example.&lt;/p&gt;&#xA;&lt;p&gt;Here, I will discuss how I&amp;rsquo;ve set things up.&lt;/p&gt;&#xA;&lt;h2 id=&#34;managing-multiple-ssh-keys&#34;&gt;Managing multiple SSH keys&lt;/h2&gt;&#xA;&lt;p&gt;With &lt;a href=&#34;https://www.oreilly.com/library/view/ssh-the-secure/0596008953/ch01s01.html&#34;&gt;SSH&lt;/a&gt;, you can securely push changes to your Git remotes without needing to enter login credentials every time. For a single repository, there is minimal setup: just upload your public key.&lt;/p&gt;</description>
     </item>
   </channel>

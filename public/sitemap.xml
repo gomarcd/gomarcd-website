@@ -2,55 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>https://gomarcd.dev/tags/docker/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://gomarcd.dev/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://gomarcd.dev/posts/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://gomarcd.dev/tags/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/video/</loc>
+    <loc>https://gomarcd.dev/tags/video/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker-for-dev/</loc>
+    <loc>https://gomarcd.dev/posts/docker-for-dev/</loc>
     <lastmod>2024-09-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://gomarcd.dev/about/</loc>
     <lastmod>2023-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/git-repo-multiple-remotes-ssh/</loc>
+    <loc>https://gomarcd.dev/posts/git-repo-multiple-remotes-ssh/</loc>
     <lastmod>2023-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ssh/</loc>
+    <loc>https://gomarcd.dev/tags/ssh/</loc>
     <lastmod>2023-02-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/3-ways-dev-workflow/</loc>
+    <loc>https://gomarcd.dev/posts/3-ways-dev-workflow/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/isolated-reproducible-laravel/</loc>
+    <loc>https://gomarcd.dev/posts/isolated-reproducible-laravel/</loc>
     <lastmod>2023-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/github-chatgpt/</loc>
+    <loc>https://gomarcd.dev/posts/github-chatgpt/</loc>
     <lastmod>2023-02-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/deploy-static-hugo-codeberg/</loc>
+    <loc>https://gomarcd.dev/posts/deploy-static-hugo-codeberg/</loc>
     <lastmod>2023-02-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/self-hosted-gitea-woodpecker/</loc>
+    <loc>https://gomarcd.dev/posts/self-hosted-gitea-woodpecker/</loc>
     <lastmod>2023-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/sign-commit-automatically-gpg/</loc>
+    <loc>https://gomarcd.dev/posts/sign-commit-automatically-gpg/</loc>
     <lastmod>2023-02-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/all/</loc>
+    <loc>https://gomarcd.dev/all/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://gomarcd.dev/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/search/</loc>
+    <loc>https://gomarcd.dev/search/</loc>
   </url>
 </urlset>

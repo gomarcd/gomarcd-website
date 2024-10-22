@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Docker on gomarcd.dev</title>
-    <link>http://localhost:1313/tags/docker/</link>
+    <link>https://gomarcd.dev/tags/docker/</link>
     <description>Recent content in Docker on gomarcd.dev</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Tue, 24 Sep 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://gomarcd.dev/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VIDEO: Docker for Dev</title>
-      <link>http://localhost:1313/posts/docker-for-dev/</link>
+      <link>https://gomarcd.dev/posts/docker-for-dev/</link>
       <pubDate>Tue, 24 Sep 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/docker-for-dev/</guid>
+      <guid>https://gomarcd.dev/posts/docker-for-dev/</guid>
       <description>&lt;style&gt;&#xA;.responsive-video-wrapper {&#xA;  position: relative;&#xA;  padding-bottom: 56.25%;  &#xA;  height: 0;&#xA;  overflow: hidden;&#xA;  max-width: 100%;&#xA;  background: #000;&#xA;}&#xA;&#xA;.responsive-video-wrapper iframe,&#xA;.responsive-video-wrapper video {&#xA;  position: absolute;&#xA;  top: 0;&#xA;  left: 0;&#xA;  width: 100%;&#xA;  height: 100%;&#xA;}&#xA;    &#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;responsive-video-wrapper&#34;&gt;&#xA;    &lt;iframe &#xA;        src=&#34;https://video.gomarcd.dev/videos/embed/589227c7-4e80-4f15-a385-95c8f596052d&#34; &#xA;        frameborder=&#34;0&#34; &#xA;        allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&#34; &#xA;        allowfullscreen&gt;&#xA;    &lt;/iframe&gt;&#xA;  &lt;/div&gt;&#xA;  &#xA;&lt;h2 id=&#34;docker-for-dev&#34;&gt;Docker for Dev&lt;/h2&gt;&#xA;&lt;p&gt;A friend has been working on mobile app development for many years now. But now that they have begun their foray into web, with Docker in particular, it&amp;rsquo;s a whole new world. I&amp;rsquo;ve been tinkering on that side of things for a while, so I put together a quick screencast to show them some things as opposed to my usual walls of gibberish which they found helpful.&lt;/p&gt;</description>
     </item>
   </channel>
